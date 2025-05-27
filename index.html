@@ -1,80 +1,116 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>It's Working – Fiber og Nettverk i Trondheim</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>It's Working – stabilt internett, raskt og enkelt!</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background-color: #f5faff;
+      background-color: #ffffff;
       color: #1f2d3d;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0;
-    }
-    header {
-      width: 100%;
-      background-color: #004a99;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 40px 20px;
-    }
-    header img {
-      max-height: 100px;
-    }
-    main {
-      max-width: 800px;
-      padding: 40px 20px;
+      line-height: 1.6;
       text-align: center;
+      padding: 60px 20px;
     }
-    h1 {
-      font-size: 2.75rem;
+
+    img {
+      max-width: 300px;
+      margin-bottom: 40px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .benefits {
+      display: grid;
+      gap: 30px;
+      animation: fadein 2s ease-in-out;
+    }
+
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .benefit {
+      background: #f0f6ff;
+      border-left: 4px solid #004a99;
+      padding: 20px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .benefit:hover {
+      transform: scale(1.02);
+      background: #e5f0ff;
+    }
+
+    .benefit h3 {
+      margin-top: 0;
       color: #004a99;
-      margin-bottom: 20px;
+      font-size: 1.2rem;
     }
-    p {
-      font-size: 1.25rem;
-      margin-bottom: 20px;
-    }
-    a {
-      color: #004a99;
-      font-weight: 600;
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      background-color: #004a99;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
       text-decoration: none;
+      font-weight: 600;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .cta-button:hover {
+      background-color: #003366;
     }
+
     footer {
-      margin-top: 60px;
+      background-color: #f9fbff;
+      color: #666;
+      text-align: center;
       font-size: 0.9rem;
-      color: #999;
-      padding-bottom: 40px;
+      padding: 40px 20px;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="its_working_logo_dark_bg.png" alt="It's Working logo">
-  </header>
-  <main>
-    <h1>Trondheims råeste løsninger<br>på fiber og nettverk</h1>
-    <p>
-      Vi i <strong>It's Working</strong> leverer markedets mest pålitelige og fremtidsrettede løsninger innen fiber og nettverk.
-      Akkurat nå jobber vi med å ferdigstille våre nettsider – men du kan allerede nå kontakte oss for tilbud eller samarbeid.
-    </p>
-    <p>
-      📩 <a href="mailto:post@itsworking.no">post@itsworking.no</a>
-    </p>
-  </main>
+
+  <img src="its_working_logo_transparent.png" alt="It's Working logo" style="max-width: 500px; margin-bottom: 40px;">
+
+  <section>
+    <div class="benefits">
+      <div class="benefit">
+        <h3>Enkelhet og kontroll</h3>
+        <p>Våre løsninger er intuitive og transparente, og gir deg full tilgang og kontroll. Du vet alltid hva du har og hvordan det fungerer.</p>
+      </div>
+      <div class="benefit">
+        <h3>Stabilitet du kan stole på</h3>
+        <p>Vi leverer stabile internett- og nettverksløsninger som sikrer oppetid og pålitelighet, slik at din virksomhet kan fokusere på egen drift.</p>
+      </div>
+      <div class="benefit">
+        <h3>Raske leveranser uten unødig venting</h3>
+        <p>Med kort responstid og effektiv implementering sørger vi for at du raskt får løsningen du trenger, uten lange ventetider eller kompliserte prosesser.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <a class="cta-button" href="mailto:kontakt@itsworking.no">Kontakt oss</a>
+  </section>
+
   <footer>
     &copy; 2025 It's Working AS
   </footer>
