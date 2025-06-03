@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Its Working – Fiber og Nettverk i Trondheim</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Montserrat', sans-serif; color: #1f2d3d; overflow-x: hidden; }
+
+    header {
+      background: url('hero_trondheim.jpg') center center / cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    nav {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 30px;
+      background: #004a99;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      height: 240px;
+    }
+
+    .hero-text {
+      background-color: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 90%;
+    }
+
+    .hero-text h1 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background-color: #f9fbff;
+      color: #666;
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #004a99;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9fbff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="its_working_logo_transparent.png" alt="It's Working logo" />
+    <nav>
+      <a href="#hjem">Hjem</a>
+      <a href="#om">Om oss</a>
+      <a href="#losninger">Våre løsninger</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="hero-text">
+      <h1>Trondheims foretrukne leverandør av fiber og nettverk</h1>
+      <p>Lokalt = rask og nøyaktig leveranse med tett oppfølging. Ingen nedetid!</p>
+    </div>
+  </header>
+
+  <section id="losninger" style="scroll-margin-top: 100px;">
+    <div style="max-width: 900px; margin: 0 auto; padding: 0 20px; margin-bottom: 40px;">
+      <p style="font-size: 1.2rem; text-align: center;">
+        Sammen med vår partner <strong>GlobalConnect</strong> har vi skreddersydd en komplett og skalerbar løsning for bedrifter i Trondheim.
+        Du får ikke bare lynrask og stabil fiber – men også tilgang til vår nyutviklede <strong>kundeportal</strong> som gir deg full innsikt i dine tjenester, faktura, status og support, samt oversikt over alle lokasjoner og brukere.
+      </p>
+    </div>
+
+    <div style="background: #f0f6ff; border-left: 4px solid #004a99; padding: 20px; border-radius: 6px; margin-bottom: 30px;">
+      <h3 style="color: #004a99;">SmartFiber – Komplett løsning for bedrifter</h3>
+      <ul>
+        <li>24/7 overvåking</li>
+        <li>Driftet brannmur</li>
+        <li>4G-backup</li>
+        <li>WiFi med gjestenett</li>
+        <li>Applikasjonsprioritering</li>
+        <li>Kundeportal</li>
+      </ul>
+    </div>
+
+    <div style="background: #f0f6ff; border-left: 4px solid #004a99; padding: 20px; border-radius: 6px; margin-bottom: 30px;">
+      <h3 style="color: #004a99;">Hastigheter og priser (SLA Silver)</h3>
+      <table>
+        <thead>
+          <tr><th>Hastighet</th><th>Pris / mnd</th><th>Etablering</th><th>SLA</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>50/50 Mbps</td><td>1 690,-</td><td>0,-</td><td>Silver</td></tr>
+          <tr><td>100/100 Mbps</td><td>1 790,-</td><td>0,-</td><td>Silver</td></tr>
+          <tr><td>200/200 Mbps</td><td>2 090,-</td><td>0,-</td><td>Silver</td></tr>
+          <tr><td>500/500 Mbps</td><td>2 990,-</td><td>0,-</td><td>Silver</td></tr>
+          <tr><td>1000/1000 Mbps</td><td>3 490,-</td><td>0,-</td><td>Silver</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top: 10px;">Levering via 4G innen 2 uker. Internkabling inkludert opptil 20 000 kr.</p>
+    </div>
+
+    <div style="background: #f0f6ff; border-left: 4px solid #004a99; padding: 20px; border-radius: 6px;">
+      <h3 style="color: #004a99;">Tilleggstjenester</h3>
+      <ul>
+        <li><strong>Extended Security:</strong> Avansert brannmur – administrert og alltid oppdatert</li>
+        <li><strong>ConnectCare:</strong> Prisfrys, abonnementsfrys og flyttemulighet (139,-/mnd)</li>
+      </ul>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px;">
+      <p style="font-size: 1.1rem;">Vi er stolt partner av <strong>GlobalConnect</strong> og har levert profesjonelle fiber- og nettverksløsninger i samarbeid med dem i en årrekke.</p>
+      <p style="margin-top: 10px; font-size: 0.95rem;">Dette gir oss tilgang til markedets mest stabile og fremtidsrettede tjenester – levert med lokal forankring og personlig oppfølging.</p>
+      <div style="margin-top: 30px;">
+        <p style="font-weight: bold; color: #004a99;">Godkjent GlobalConnect-partner</p>
+        <img src="globalconnect_logo.png" alt="GlobalConnect logo" style="max-width: 220px; margin-top: 10px;">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 It's Working AS
+  </footer>
+
+</body>
+</html>
